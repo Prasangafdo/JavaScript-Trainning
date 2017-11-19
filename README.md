@@ -9,4 +9,8 @@ Here I have included the source code of all the source codes in the development 
 3. Data types
 4. Operators
 5. Events
+6. Functions
+7. Multiple parameters
+8. Arrays
+9. Nested - if statements
 

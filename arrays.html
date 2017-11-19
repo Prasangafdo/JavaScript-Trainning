@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays</title>
+</head>
+<body>
+<script type="text/javascript">
+	var arr = new Array("Lamborghini", "McLaren", "Ford", "Dodge", "Subaru");//This is how we declare an array in JavaScript
+
+	//document.write(arr);//This will print everything with commas
+
+	//document.write(arr[0]);//To test the first element.
+
+	for (var i = arr.length - 1; i >= 0; i--) {//This prints in decending order
+		document.write(arr[i]+"<br/>");
+	}
+
+	var arr2 = new Array();
+
+	arr2[0] = "car";
+	arr2[1] = "van";
+	arr2[2] = "bus";
+	arr2[3] = "train";
+	arr2[4] = "lorry";
+
+	document.write(arr2.length);//No need paranthasis for the length property in JS.
+
+</script>
+</body>
+</html>
