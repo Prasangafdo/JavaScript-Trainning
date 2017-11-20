@@ -13,4 +13,7 @@ Here I have included the source code of all the source codes in the development 
 7. Multiple parameters
 8. Arrays
 9. Nested - if statements
-
+10. Switch Statement
+11. Loops
+12. Elements
+13. 
