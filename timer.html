@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer</title>
+
+	<script type="text/javascript">
+
+		/*function changeImage() {
+		var img = document.getElementById('img');
+		img.src='img2.png';
+
+		//This only changes the image once..
+		}*/
+		var imageTracker = '1';
+
+		function changeImage() {
+			var img =document.getElementById('img');
+			
+			if (imageTracker =='1') {
+				img.src = "img2.png";
+				imageTracker = '2';
+				//Switching to secons img
+			}
+			else{
+				img.src = "img1.png";
+				imageTracker = '1';
+				//Switching back to first img
+			}
+				
+		}
+
+		//setTimeout('javascript code', time in ms) 
+		//But that only runs one time.
+
+		//SetInterval("","");
+		//This runs continuously
+			//setTimeout('changeImage()', 1000);
+			setInterval('changeImage()', 1000);
+
+	</script>
+</head>
+<body>
+<img src="img1.png" alt="Car" id="img" onclick="changeImage();">
+</body>
+</html>

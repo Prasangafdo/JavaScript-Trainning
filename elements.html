@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elements</title>
+
+	<script type="text/javascript">
+	//You can include javascript inside the head tag also.
+	function textChange() {
+		var para = document.getElementById('para');
+		para.innerHTML ="You clicked me...";
+
+		//var para = document.getElementById('para').innerHTML ="You clicked me...";
+		//We can do the same with this way also.
+	}
+</script>
+</head>
+<body>
+
+
+<p id="para" onclick="textChange();"> This is a paragraph</p>
+</body>
+</html>

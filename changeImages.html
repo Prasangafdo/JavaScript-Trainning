@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change Images</title>
+
+	<script type="text/javascript">
+
+		/*function changeImage() {
+		var img = document.getElementById('img');
+		img.src='img2.png';
+
+		//This only changes the image once..
+		}*/
+		var imageTracker = '1';
+
+		function changeImage() {
+			var img =document.getElementById('img');
+			
+			if (imageTracker =='1') {
+				img.src = "img2.png";
+				imageTracker = '2';
+				//Switching to secons img
+			}
+			else{
+				img.src = "img1.png";
+				imageTracker = '1';
+				//Switching back to first img
+			}
+				
+		}
+
+	</script>
+</head>
+<body>
+<img src="img1.png" alt="Car" id="img" onclick="changeImage();">
+</body>
+</html>
