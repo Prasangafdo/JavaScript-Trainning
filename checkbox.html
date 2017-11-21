@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkbox</title>
+	<script type="text/javascript">
+		
+		function check_null() {
+			var Cricket = document.getElementById('Cricket').checked;
+			var Football = document.getElementById('Football').checked;
+			var Rugby = document.getElementById('Rugby').checked;
+			var table_Tennis = document.getElementById('table_Tennis').checked;
+
+			if (Cricket== false && Football == false && Rugby == false && table_Tennis == false) {
+				alert("Please select at least one.");
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+	</script>
+</head>
+<body>
+<h3>Please select your sports</h3>
+	<form action="" method="GET" onsubmit="return check_null();">
+	Cricket<input type="Checkbox" name="sport" id="Cricket"><br/>
+	Football<input type="Checkbox" name="sport" id="Football"><br/>
+	Rugby<input type="Checkbox" name="sport" id="Rugby"><br/>
+	Table Tennis<input type="Checkbox" name="sport" id="table_Tennis"><br/>
+	<input type="submit" name="submit" id="submit">
+	</form>
+</body>
+</html>

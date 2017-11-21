@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radio Group</title>
+<script type="text/javascript">
+
+	document.write("<h3>Select your gender to submit.");
+
+	function check_info() {
+		//Checking whether both radio buttons aren't checked.
+		var male = document.getElementById('gender_male').checked;
+		var female = document.getElementById('gender_female').checked;
+
+		var gender_name = "female";//Initializing gender to female
+
+		/*if((male && female)== false){
+		*Don't insert it like this. It doesn't work. 
+		*Use the following way. */
+
+		if(male==false && female==false){
+
+		alert("Please select your gender");
+		return false;//Preventing redection.
+		}
+		//Do not insert any code within any if-else condition.
+		else if (male == true) {
+			 gender_name = "male";//Changing gender to male, if male is checked.
+		}
+		alert("You are "+gender_name);
+		return true;//Redirecting to the action page
+
+	}
+
+
+</script>
+</head>
+<body>
+<form action="" method="GET" onsubmit="return check_info();">
+	Male <input type="Radio" name="gender" value="male" id="gender_male"><br/>
+	Female <input type="Radio" name="gender" value="female" id="gender_female"><br/>
+	<input type="submit" name="submit" value="OK">
+</form>
+
+</body>
+</html>

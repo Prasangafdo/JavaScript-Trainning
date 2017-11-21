@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms checking for empty input information</title>
+
+	<script type="text/javascript">
+		function chek_info() {
+			var name = document.getElementById('name').value;
+			var password = document.getElementById('password').value;
+
+			if (name=="" || password=="") {
+ 				alert("Name or password is empty!\nPlease fill in all feilds.");
+ 				return false;//We use this to stay in this page without redirecting.
+			}
+			else{
+				return true;
+			}
+		}
+	</script>
+</head>
+<body>
+<form action="form2action.html" method="POST" onsubmit="return chek_info();">
+	<!--Using onsubmit to use it without onclick() method.
+	    In here the input type is submit. Not button -->
+	<input type="text" name="name" id="name"/>
+	<input type="password" name="password" id="password"/>
+	<input type="submit" name="submit" id="submit" value="Login" />
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+	<script type="text/javascript">
+		function getName() {
+			var welcomePara = document.getElementById('welcome');
+			var inputText = document.getElementById('name');
+
+			/* var inputText = document.getElementById('name').value;
+			 * we can select only the "value" property instead of selecting the whole inputText like that.
+			 */
+
+			welcomePara.innerHTML = "Welcome "+inputText.value;
+			//Setting the value to the paragraph to display.
+
+			//.value is equals to getText() in java.
+		}
+	</script>
+</head>
+<body>
+<p id="welcome"></p>
+
+<form>
+	<p>Please enter your name.</p>
+	<input type="text" name="name" id="name">
+	<input type="button" name="submit" value="submit" id="submit" onclick="getName()">
+</form>
+</body>
+</html>
